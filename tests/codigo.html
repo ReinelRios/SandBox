@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h3>Ingresa el código secreto</h3>
+
+<input id="codigo" placeholder="Código">
+<button onclick="validar()">Validar</button>
+
+<script>
+function validar(){
+  let c = document.getElementById("codigo").value;
+  if(c === "MAG-4721"){
+    document.body.innerHTML = "<h2>¡Acceso desbloqueado!</h2>";
+  } else {
+    alert("Código incorrecto");
+  }
+}
+</script>
+
+</body>
+</html>
